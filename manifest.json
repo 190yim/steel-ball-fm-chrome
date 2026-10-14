@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Steel Ball FM",
+  "version": "1.0.0",
+  "description": "Écoutez vos radios favorites depuis Chrome ou Brave.",
+  "permissions": [
+    "storage",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "https://de1.api.radio-browser.info/*",
+    "https://*.radio-browser.info/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_title": "Steel Ball FM",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
